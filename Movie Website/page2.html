@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/clapperboard (1).png">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+
+</head>
+<body>
+   
+    <section id="movie-page">
+        <div class="movie-page-container">
+
+            <div class="navbar-container">
+                <nav>
+                    <div class="navbar navbar-expand-lg fixed-top">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                                <h4><img src="images/clapperboard (1).png" alt="" style="width: 45px; margin-right: 10px;"><span>M</span>ovieFlex</h4>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Popular</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="page2.html">Movies</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#categories" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Categories
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#action">Action</a></li>
+                                        <li><a class="dropdown-item" href="#comedy">Comedy</a></li>
+                                        <li><a class="dropdown-item" href="#drama">Drama</a></li>
+                                        <li><a class="dropdown-item" href="#romance">Romance</a></li>
+                                        <li><a class="dropdown-item" href="#crime">Crime</a></li>
+                                        <li><a class="dropdown-item" href="#thrillers">Thrillers</a></li>
+                                        <li><a class="dropdown-item" href="#horror">Horror</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                                <a href="login.html"><button class="login-btn">Login</button></a>
+
+                            </div>
+                        
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color: #f7f7f8;"></i></span>
+                            </button>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!--movie slider-->
+
+            <div class="sliders">  
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/satyabhama.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1>Satyabhama</h1>
+                          <p>2024 | Thriller/Crime | 2h 12m</p>
+                          <p>ACP Satyabhama investigates a missing person case, uncovering dark secrets across shadowy towns. 
+                            Her past haunts her as she races to find the truth and redemption amidst the high-stakes investigation.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/dunki.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                          <p>2023 | Comedy/Adventure | 2h 41m</p>
+                          <p>When his friends in Punjab struggle to clear the immigration process, 
+                            an ex-soldier guides them on a risky journey to enter the UK without permission.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images3.alphacoders.com/112/thumb-1920-1120609.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                          <p>2012 | Action/Adventure | 2h 23m</p>
+                          <p>S.H.I.E.L.D. leader Nick Fury is compelled to launch the Avengers programme when Loki poses a threat to planet Earth. 
+                            But the superheroes must learn to work together if they are to stop him in time</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <button class="watch-now-btn">Watch Now</button>
+            </div> 
+
+        </div>
+    </section>
+    <hr>
+
+    <section id="movies">
+        <div class="movie-container"> 
+
+            <!--Categories section-->
+
+            <h4>Discover More Movies</h4>
+            <h5>Action Movies</h5>
+            <div class="movie-slider">
+                <div id="action" class="poster">
+                    <div class="poster-card">
+                        <img src="movies-img/action/jawan.webp" alt="">
+                        <p>Jawan</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/action/John-wick2.jpg" alt="">
+                        <p>John wick 2</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/action/kgf2.jpg" alt="">
+                        <p>KGF 2</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/action/tanaji.jpg" alt="">
+                        <p>Tanaji</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/action/saaho.jpg" alt="">
+                        <p>Saaho</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/action/war.jpg" alt="">
+                        <p>War</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/action/thor.png" alt="">
+                        <p>Thor</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/action/fighter.webp" alt="">
+                        <p>Fighter</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/action/shershaah.png" alt="">
+                        <p>Shershaah</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/action/kanguva.webp" alt="">
+                        <p>Kanguva</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <hr>
+
+            <h5>Comedy and Drama</h5>
+            <div class="movie-slider">
+                <div id="comedy" class="poster">
+                    <div id="drama" class="poster-card">
+                        <img src="movies-img/drama/tamasha.jpg" alt="">
+                        <p>Tamasha</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/drama/chennai-express.jpg" alt="">
+                        <p>Chennai Express</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/drama/golmal-again.jpg" alt="">
+                        <p>Golmaal Again</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/drama/dunki.jpg" alt="">
+                        <p>Dunki</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/drama/bhool-bhulaiya.jpg" alt="">
+                        <p>Bhool Bhulaiya 2</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/drama/total-dhamaal.jpg" alt="">
+                        <p>Total Dhamaal</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/drama/ohbaby.webp" alt="">
+                        <p>Oh Baby</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/drama/tanu-weds-manu.jpg" alt="">
+                        <p>Tanu weds Manu</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/drama/kapoor-and-sons.jpg" alt="">
+                        <p>Kapoor and sons</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/drama/crew.webp" alt="">
+                        <p>Crew</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <h5>Romance</h5>
+            <div class="movie-slider">
+                <div id="romance" class="poster">
+                    <div id="drama" class="poster-card">
+                        <img src="movies-img/romantic/rocky&rani.jpg" alt="">
+                        <p>Rockey and Rani</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/romantic/dhadak.jpg" alt="">
+                        <p>Dhadak</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/romantic/october.webp" alt="">
+                        <p>October</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/romantic/2-states.jpg" alt="">
+                        <p>2 States</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/romantic/RNBDJ.jpg" alt="">
+                        <p>Rab Ne Bana De jodi</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/romantic/ADHM.jpg" alt="">
+                        <p>Ae Dil Hai Mushkil</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/romantic/love-aaj-kal.webp" alt="">
+                        <p>Love Aaj Kal</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/romantic/raanjhanaa.jpg" alt="">
+                        <p>Raanjhanaa</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/romantic/YJHD.jpg" alt="">
+                        <p>Ye Jawani Hai Diwani</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/romantic/apkgk.jpg" alt="">
+                        <p>Ajab Prem ki Gajab Kahani</p>
+                    </div>
+                    
+                </div>
+            </div> 
+            <hr>
+
+            <h5>Crime and Thriller</h5>
+            <div class="movie-slider">
+                <div id="crime" class="poster">
+                    <div id="thriller" class="poster-card">
+                        <img src="movies-img/crime/drishyam.jpg" alt="">
+                        <p>Drishyam</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/crime/salute.jpg" alt="">
+                        <p>Salute</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/crime/nishabdham.webp" alt="">
+                        <p>Nishabdham</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/crime/rogue-one.webp" alt="">
+                        <p>Rogue One</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/crime/the-quarry.webp" alt="">
+                        <p>The Quarry</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/crime/wazir.jpg" alt="">
+                        <p>Wazir</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/crime/badla.webp" alt="">
+                        <p>Badla</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/crime/mom.webp" alt="">
+                        <p>Mom</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/crime/bad-boys.jpg" alt="">
+                        <p>Bad Boys</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/crime/openheimer.avif" alt="">
+                        <p>Oppenheimer</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <h5>Horror</h5>
+            <div class="movie-slider">
+                <div id="horror" class="poster">
+                    <div class="poster-card">
+                        <img src="movies-img/horror/the -others.jpg" alt="">
+                        <p>The Others</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/horror/devil.jpg" alt="">
+                        <p>Devil</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/horror/shaitaan.jpg" alt="">
+                        <p>Shaitaan</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/horror/bhoot.avif" alt="">
+                        <p>Bhoot</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/horror/munjya.jpg" alt="">
+                        <p>Munjya</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/horror/stree.jpg" alt="">
+                        <p>Stree</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/horror/lost-girls.jpg" alt="">
+                        <p>The Lost Girl</p>
+                    </div>
+                    <div class="poster-card">
+                        <img src="movies-img/horror/insidious.webp" alt="">
+                        <p>Insidious</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <!--  footer section  -->
+    <section id="footer">
+        <div class="footer-container">
+            <div class="footer-logo"><h4><a href="#">MovieFlex</a></h4></div>
+            <p>Explore Your Favourite Movie To Watch Anytime Anywhere with Only MovieFlex.</p>
+            <div class="row">
+                <div class="col col-lg-3">
+                    <ul>
+                        <h6>Company</h6>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="page2.html">Movie</a></li>
+                        <li><a href="page2.html">Categories</a></li>
+                    </ul>
+                </div>
+            
+
+                <div class="col col-lg-3">
+                    <ul>
+                        <h6>Support</h6>
+                        <li><a href="#">Finding Help</a></li>
+                        <li><a href="#">Support Library</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                    </ul>
+                </div>
+
+                <div class="col col-lg-3">
+                    <ul>
+                        <h6>Legal</h6>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">settings</a></li>
+                    </ul>
+                </div>
+
+                <div class="col col-lg-3">
+                    <div class="social-links">
+                        <h6>Get In Touch</h6>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-threads"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © 2025 MovieFlex | Privacy & Legal | Accessibility | Manage Cookies | Language: English (US)</p>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+</html>

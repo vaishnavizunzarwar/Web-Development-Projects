@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/clapperboard.png">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-form">
+        
+        <div class="form-container">
+            <h2>Login Here</h2>
+            <p id="error-message"></p>
+            <form id="form" onsubmit="return validation()">
+                <div class="input-text">
+                    <input autocomplete="off" type="email" id="email-Id" name="email" placeholder="Email Address">
+                    <div id="email_error">Please fill up your Email</div>
+                </div>
+                
+                <div class="input-text">
+                    <input type="password" id="password-input" name="password" placeholder="Password">
+                    <div id="password_error">Please fill up your Password</div>
+                </div>
+
+                <div class="input-text">
+                    <button>Submit</button>
+                </div>
+
+                <div class="input-text">
+                    <a href="">Forgot password?</a>
+                </div>
+                <div class="input-text">
+                    <p>Don't have Account? Create an Account.</p>
+                </div>
+                <div class="input-text">
+                    <a href="signup.html">Sign up now.</a>
+                </div>
+
+            </form>  
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>

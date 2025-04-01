@@ -1,0 +1,479 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, black, black);
+}
+
+/*home-section*/
+#home {
+  position: relative;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(images/beauty-and-the-beast-wallpapers.jpg);
+  height: 100vh;
+  padding: 1px;
+}
+
+/* Navbar */
+.navbar {
+  font-family: "Roboto";
+  position: fixed;
+  color: white;
+  width: 100%;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.navbar .navbar-brand {
+  color: white;
+  text-shadow: 3px 2px black;
+  text-decoration: underline;
+  padding-right: 1.5rem;
+}
+.navbar span {
+  font-size: 2rem;
+}
+.navbar h4 img {
+  width: 40px;
+  margin-right: 10px;
+}
+.navbar li {
+  padding-left: 4rem;
+}
+.navbar li .nav-link {
+  color: white;
+  text-shadow: 2px 1.5px black;
+}
+.navbar li .nav-link:hover {
+  padding: 0.5rem 1.2rem;
+  box-shadow: 0px 0px 2px 2px white;
+  color: white;
+  text-decoration: underline;
+}
+.navbar .dropdown-item {
+  color: black;
+  padding: 8px 5px;
+}
+.navbar .login-btn {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid rgb(13, 13, 13);
+  background-color: rgb(17, 92, 231);
+  width: 6rem;
+}
+.navbar .login-btn:hover {
+  color: white;
+  background-color: rgb(10, 65, 132);
+}
+
+/*login - signup form*/
+.login-form,
+.signup-form {
+  background-image: url(images/cinema-with-popcorn-box.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+}
+
+.form-container {
+  font-family: "Roboto";
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 1px 1px 1.5px 1.5px rgb(231, 230, 230);
+  border-radius: 5px;
+  margin: 5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.form-container h2 {
+  padding-bottom: 1.5rem;
+}
+.form-container .input-text {
+  font-size: 18px;
+  margin: 1rem;
+  padding: 0rem 1rem;
+}
+.form-container .input-text a {
+  color: rgb(133, 144, 242);
+}
+.form-container .input-text a:hover {
+  color: rgb(44, 44, 245);
+}
+.form-container .input-text input {
+  width: 380px;
+  height: 45px;
+  font-size: 18px;
+  padding: 5px;
+}
+.form-container .input-text input:hover {
+  border-color: blue;
+  box-shadow: 0px 0px 2px 2px rgb(65, 65, 246);
+}
+.form-container .input-text ::-moz-placeholder {
+  font-size: 16px;
+}
+.form-container .input-text ::placeholder {
+  font-size: 16px;
+}
+.form-container .input-text button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid rgb(13, 13, 13);
+  background-color: rgb(17, 92, 231);
+  font-size: 16px;
+  border: none;
+  width: 7rem;
+  height: 2.5rem;
+  box-shadow: 0px 0px 1px 1px rgb(220, 220, 220);
+}
+.form-container .input-text button:hover {
+  color: white;
+  background-color: rgb(10, 65, 132);
+}
+.form-container #email_error {
+  display: none;
+  font-size: 15px;
+  margin: 0rem 2rem;
+  padding: 5px;
+  width: 380px;
+  height: 30px;
+  color: red;
+  background-color: rgb(252, 140, 128);
+}
+.form-container #password_error {
+  display: none;
+  font-size: 15px;
+  margin: 0rem 2rem;
+  padding: 5px;
+  width: 380px;
+  height: 30px;
+  color: red;
+  background-color: rgb(252, 140, 128);
+}
+.form-container #confirmPass_error {
+  display: none;
+  font-size: 15px;
+  margin: 0rem 2rem;
+  padding: 5px;
+  width: 380px;
+  height: 30px;
+  color: red;
+  background-color: rgb(252, 140, 128);
+}
+
+/*home content*/
+.home-content {
+  margin-top: 220px;
+  padding: 1rem;
+  width: 500px;
+  height: 220px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  text-shadow: 2px 2px black;
+  box-shadow: 0 0 2px 2px white;
+}
+.home-content h1 {
+  font-family: "Abril Fatface";
+}
+.home-content .watch-now-btn {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid rgb(13, 13, 13);
+  background-color: rgb(17, 92, 231);
+}
+.home-content .watch-now-btn:hover {
+  color: white;
+  background-color: rgb(10, 65, 132);
+}
+
+/*movie section*/
+#movies {
+  background-color: black;
+}
+
+.movie-container {
+  margin: 1rem 1.5rem;
+  margin-bottom: 0rem;
+  color: white;
+}
+.movie-container h4 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.movie-container h5 {
+  padding: 10px 5px;
+}
+.movie-container .movie-slider {
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 5px;
+}
+.movie-container .poster {
+  width: 190px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+.movie-container .poster-card {
+  padding: 0 0.6rem;
+  color: white;
+  border: solid rgb(77, 77, 77);
+  border-width: 1px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.movie-container .poster-card p {
+  font-size: 14px;
+}
+.movie-container .poster-card:hover {
+  border: none;
+  box-shadow: 0px 0px 1px 1.5px white;
+}
+.movie-container img {
+  display: block;
+  padding: 1rem 0;
+  width: 180px;
+  height: 260px;
+}
+
+/* movie page */
+#movie-page {
+  position: relative;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  min-width: 320px;
+}
+
+/* movie slider */
+.sliders {
+  text-shadow: 1px 1px black;
+  text-align: center;
+  margin: 5rem 0rem;
+  padding-left: 5rem;
+}
+.sliders h1 {
+  font-family: "Abril Fatface";
+}
+.sliders img {
+  height: 550px;
+  border-radius: 10px;
+}
+.sliders .watch-now-btn {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid rgb(13, 13, 13);
+  background-color: rgb(17, 92, 231);
+}
+.sliders .watch-now-btn:hover {
+  color: white;
+  background-color: rgb(10, 65, 132);
+}
+
+/* online section */
+.online-section {
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 4rem 10rem;
+}
+.online-section img {
+  margin: 2rem;
+  width: 350px;
+  border-radius: 8rem;
+}
+.online-section .content p {
+  font-size: 18px;
+  line-height: 1.8rem;
+}
+.online-section .watch-now-btn {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid rgb(13, 13, 13);
+  background-color: rgb(17, 92, 231);
+}
+.online-section .watch-now-btn:hover {
+  color: white;
+  background-color: rgb(10, 65, 132);
+}
+
+/* footer */
+.footer-container {
+  background-color: rgb(20, 20, 20);
+  justify-content: center;
+  color: white;
+  padding: 2rem;
+  line-height: 1.5rem;
+}
+.footer-container h4 a {
+  color: white;
+  text-decoration: underline;
+  padding-top: 2rem;
+}
+.footer-container p {
+  padding-top: 1.5rem;
+  font-size: 18px;
+}
+.footer-container .row {
+  padding: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.footer-container h6 {
+  color: white;
+}
+.footer-container a {
+  color: rgb(165, 164, 164);
+  text-decoration: none;
+}
+.footer-container li {
+  list-style: none;
+}
+
+.copyright p {
+  font-size: 14px;
+  text-align: center;
+  color: rgb(198, 198, 198);
+}
+
+/* media quary */
+@media (max-width: 768px) {
+  /*navbar logo*/
+  .navbar {
+    margin: 2px;
+    font-size: 15px;
+  }
+  .navbar .navbar-brand h4 {
+    font-size: 18px;
+  }
+  .navbar .navbar-brand span {
+    font-size: 20px;
+  }
+  .navbar .navbar-toggler-icon {
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid white;
+  }
+  /*home container*/
+  .home-content {
+    width: 300px;
+    height: 150px;
+  }
+  .home-content h1 {
+    font-size: 25px;
+  }
+  .home-content h5 {
+    font-size: 18px;
+  }
+  /*login/signup form*/
+  .form-container {
+    padding: 2rem 0rem;
+  }
+  .form-container .input-text {
+    padding: 0px;
+    font-size: 15px;
+  }
+  .form-container input {
+    font-size: 15px;
+    width: 300px;
+    height: 40px;
+  }
+  /*movie container*/
+  .watch-now-btn {
+    font-size: 12px;
+    margin: 0.5rem;
+  }
+  .movie-container .movie-slider {
+    padding: 0px;
+  }
+  .movie-container .poster {
+    padding: 1rem 0rem;
+  }
+  .movie-container .poster-card {
+    width: 140px;
+    height: 210px;
+    margin: 2px;
+  }
+  .movie-container .poster-card p {
+    font-size: 12px;
+  }
+  .movie-container .poster-card img {
+    width: 120px;
+    height: 180px;
+  }
+  .movie-container h5 {
+    padding: 5px;
+    font-size: 15px;
+  }
+  .movie-container h4 {
+    text-align: center;
+    font-size: 18px;
+  }
+  .movie-page-container {
+    height: 40vh;
+  }
+  .movie-page-container .navbar {
+    padding: 0rem;
+  }
+  .movie-page-container .sliders {
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .movie-page-container .sliders img {
+    width: 100px;
+    height: 180px;
+  }
+  /*online movie section*/
+  .online-section {
+    text-align: center;
+    padding: 0rem 2.4rem;
+  }
+  .online-section h3 {
+    text-align: center;
+    font-size: 18px;
+  }
+  .online-section img {
+    margin: 0rem 1rem;
+    width: 200px;
+  }
+  .online-section .content p {
+    text-align: left;
+    margin: 1rem;
+    font-size: 15px;
+    line-height: normal;
+  }
+  /*footer section*/
+  #footer .footer-container p, #footer .footer-container h6 {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Verdana", "Geneva", "Tahoma", "sans-serif";
+}
+
+
+header{
+    background-color: black;
+}
+
+/* navbar */
+
+.navbar{
+    background-color: rgb(66, 23, 66);
+    padding: 10px;
+}
+
+.navbar .navbar-brand{
+    color: white;
+    font-size: 25px;
+    margin: 0rem 1rem;
+}
+.navbar .navbar-brand:hover{
+    color: white;
+}
+.navbar .navbar-brand span{
+    font-size: 35px;
+    color: yellow;
+}
+.navbar li{
+    text-align: center;
+    font-size: 15px;
+    padding: 0rem 2rem;
+}
+.navbar li a{
+    color: white;
+}
+.navbar li a:hover{
+    color: rgb(251, 251, 46);
+    text-decoration: underline;
+}
+
+/*container*/
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/bg-img.jpg);
+}
+
+.container .content{
+    text-align: center;
+    margin-right: 60%;
+    padding-top: 200px;
+}
+.content h1{
+    line-height: 70px;
+    font-size: 50px;
+    font-family: Josefin;
+    color: rgb(24, 24, 24);
+}
+
+.span-fashion{
+    font-family: Josefin;
+}
+
+.fashion{
+    transform: rotate(-2deg);
+    background-color: rgb(244, 244, 18);
+}
+
+.content p{
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(97, 56, 56);
+}
+
+.shop-btn{
+    font-size: 18px;
+    box-shadow: 0px 0px 1px 1px black;
+    border-radius: .2rem;
+    padding: .5rem;
+    color: black;
+    background-color: transparent;
+}
+
+.shop-btn:hover{
+    color: white;
+    background-color: rgb(29, 27, 27);
+}
+
+/*women section*/
+.poster-section{
+    margin: 2.5rem;
+}
+
+.poster-header{
+    color: rgb(60, 103, 177);
+    background-color: yellow;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.poster-container{
+    font-family: Josefin;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem;
+    gap: 1rem;
+    border-radius: 8px;
+    line-height: 8px;
+}
+
+.poster-img img:hover{
+    transform: scale(1.1);
+}
+
+.poster-img a{
+    font-size: 15px;
+    color: rgb(94, 100, 119);
+    text-decoration: none;
+}
+
+.poster-img a:hover{
+    color: rgb(44, 97, 223);
+}
+
+.poster-img img{
+    width: 400px;
+    height: 270px;
+    cursor: pointer;
+    margin: .4rem;
+}
+
+.poster-img h6{
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(27, 27, 90);
+}
+
+.poster-card{
+    width: 450px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    text-align: left;
+    padding: 1.2rem;
+}
+
+/* mens wear */
+
+#mens-section{
+    margin: 2rem;
+}
+.mens-header{
+    color: rgb(60, 103, 177);
+    background-color: yellow;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.mens-container{
+    font-family: Josefin;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 1.5rem;
+    gap: 1rem;
+    border-radius: 8px;
+    line-height: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.mens-card h6{
+    padding-top: 1rem;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(27, 27, 90);
+}
+
+.mens-card a{
+    font-size: 15px;
+    color: rgb(94, 100, 119);
+    text-decoration: none;
+}
+
+.mens-img a:hover{
+    color: rgb(44, 97, 223);
+}
+
+.mens-img img{
+    justify-content: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mens-img img:hover{
+    transform: scale(1.1);
+}
+
+.mens-card{
+    width: 260px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: rgb(237, 235, 235);
+    text-align: left;
+    padding: 2rem;
+}
+
+/* promo */
+
+.promo-container{
+    padding: 2rem;
+    padding-top: 100px;
+    padding-right: 40%;
+    height: 100vh;
+    text-align: center;
+    line-height: 2rem;
+    background-image: url(images/promo-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.offer-img img{
+    width: 35%;
+    height: 35%;
+}
+
+.promo-container input{
+    width: 350px;
+    height: 50px;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.send-btn{
+    font-size: 15px;
+    padding: 0rem 1.5rem;
+    border-radius: 5px;
+    background-color: rgb(29, 27, 27);
+    color: #ffffff;
+}
+
+.send-btn:hover{
+    background-color: rgb(81, 74, 74);
+}
+
+
+/* footer */
+
+.footer{
+    height: 80vh;
+    padding: 2rem;
+}
+
+.footer-container{
+    max-width: 1500px;
+    margin: 2rem;
+    margin-bottom: 150px;
+    color: white;
+}
+
+.footer-logo a{
+    color: rgb(238, 132, 20);
+    font-size: 20px;
+    margin-left: 2rem;
+    margin-bottom : 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-container p {
+    margin: 1rem 2rem;
+}
+
+.footer-container li{
+    list-style: none;
+}
+
+.footer-container a:hover{
+    color: rgb(238, 132, 20);
+}
+
+.footer-container .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem;
+    line-height: 1.8rem;
+}
+
+.col{
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.col h4{
+    font-size: 18px;
+    color: rgb(238, 132, 20);
+    list-style: none;
+}
+
+.col li{
+    margin: 0rem 1rem;
+}
+
+.col a{
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+/* login form */
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/login-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-form form{
+    padding-top: 1rem;
+    width: 500px;
+    height: 500px;
+    background:transparent;
+    border: 2px solid rgb(39, 38, 38);
+    color: black;
+    border-radius: 1rem;
+}
+
+.login-form h2{
+    color: rgb(48, 48, 101);
+    font-size: 25px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.login-content{
+    padding: 0 2rem;
+}
+
+.login-input input{
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(54, 53, 53);
+    border-radius: 2rem;
+    font-size: 15px;
+    width: 90%;
+    height: 50px;
+    margin: .2rem;
+    color: rgb(54, 53, 53);
+    font-size: 15px;
+    padding-left: 1rem;
+}
+
+.login-input input::placeholder{
+    padding-left: 1rem;
+    color: rgb(91, 90, 90);
+}
+
+.login-input i{
+    font-size: 24px;
+}
+
+.forgot, .register{
+    margin: 2rem;
+    text-align: center;
+}
+
+.login-content button{
+    font-size: 18px;
+    color: white;
+    background-color: rgb(93, 92, 91);
+    width: 40%;
+    height: 40px;
+    border-radius: 2rem;
+    margin-left: 130px;
+}
+
+.login-content button:hover{
+    background-color: rgb(171, 112, 2);
+}
+
+.login-content a{
+    color: rgb(51, 51, 253);
+}
+
+.login-content a:hover{
+    color: rgb(186, 43, 33);
+}
+
+/* signup */
+
+.signup-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/login-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.signup-form form{
+    padding-top: 1rem;
+    width: 500px;
+    height: 600px;
+    background:transparent;
+    border: 2px solid rgb(39, 38, 38);
+    color: black;
+    border-radius: 1rem;
+}
+
+.signup-form h2{
+    color: rgb(48, 48, 101);
+    font-size: 25px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.signup-content{
+    padding: 0 1rem;
+}
+
+.signup-input{
+    margin: .5rem;
+}
+
+.signup-input input{
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(54, 53, 53);
+    border-radius: 2rem;
+    font-size: 15px;
+    width: 100%;
+    height: 45px;
+    margin: .2rem;
+    color: rgb(54, 53, 53);
+    font-size: 15px;
+    padding-left: 1rem;
+}
+
+.signup-input input::placeholder{
+    padding-left: 1rem;
+    color: rgb(91, 90, 90);
+}
+
+.signup-content button{
+    font-size: 18px;
+    color: white;
+    background-color: rgb(171, 112, 2);
+    width: 40%;
+    height: 40px;
+    border-radius: 2rem;
+    margin-left: 130px;
+}
+
+.signup-content a{
+    color: rgb(51, 51, 253);
+}
+
+.signup-content a:hover{
+    color: rgb(186, 43, 33);
+}
+
+.signup-content button:hover{
+    background-color:  rgb(93, 92, 91);
+}
+
+.signup-content p{
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.signup-checkbox{
+    margin: 1.5rem;
+}
+
+/*media quary*/
+
+@media (max-width: 992px){
+    .header{
+        padding: 2px;
+    }
+    .navbar li{
+        text-align: left;
+        margin: 8px;
+        box-shadow: 0px 0px 1px 1px yellow;
+    }
+    .navbar li:hover{
+        box-shadow: 0px 0px 1px 1px white;
+    }
+    .poster-container{
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 14px;
+    }
+    .poster-card img{
+        width: 260px;
+        height: 160px;
+    }
+    .poster-card{
+        width: 320px;
+        height: 250px;
+    }
+    .poster-card a{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:768px){
+   body{
+    font-size: 15px;
+   }
+   .footer{
+    padding: 0px;
+   }
+   .footer-container .row{
+    margin: 0px;
+   }
+   .poster-container{
+    grid-template-columns: repeat(1, 1fr);
+   }
+}

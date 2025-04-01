@@ -1,0 +1,511 @@
+:root{
+    background: white;
+}
+
+*{
+    font-family: Jost;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform:none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: rgb(74, 126, 230);
+    color: white;
+}
+
+html{
+    font-size: 1rem;
+    overflow-x: hidden;
+    scroll-padding: smooth;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%; 
+}
+
+.btn{
+    display: inline-block;
+    margin: 1rem 0 1rem 0;
+    background: rgb(232, 182, 56);
+    color: black;
+    padding: .5rem 2rem;
+    border: 2rem solid var(--orange);
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.btn:hover{
+    background: rgb(159, 116, 8);
+    color: white;
+}
+
+/*navbar*/
+.navbar{
+    width: 100%;
+    position: fixed;
+    background: rgb(65, 142, 156);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0rem 1.5rem;
+}
+
+.navbar .logo{
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    text-transform: capitalize;
+}
+
+.navbar .logo span{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(16, 54, 65);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar .nav-list a{
+    color: rgb(249, 249, 249);
+    font-style: bold;
+    font-size: 1.2rem;
+    margin: 1.2rem;
+}
+
+.navbar .nav-list a:hover{
+    color: rgb(16, 54, 65);
+}
+
+.nav-btn .btn{
+    width: 100%;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-btn .btn:hover{
+    background: white;
+    color: black;
+}
+
+/*signup*/
+.login-form{
+    background: linear-gradient(to right, rgb(75, 106, 118), rgb(109, 188, 208));
+    padding-top: 2rem;
+    border-radius: 1rem;
+    margin: 5rem 28rem;
+    width: 600px;
+    height: 450px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+.login-form h3{
+    padding: 1rem;
+    font-size: 25px;
+}
+
+.signup-form{
+    background: linear-gradient(to right, rgb(75, 106, 118), rgb(109, 188, 208));
+    padding-top: 2rem;
+    border-radius: 1rem;
+    margin: 5rem 28rem;
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.signup-form h3{
+    padding: .5rem;
+    font-size: 25px;
+}
+
+form .input-text{
+    text-align: left;
+    padding: 1rem;
+    border-radius: 5rem;
+    border: 1px solid black;
+    width: 400px;
+    height: 50px;
+    margin: 1rem 6rem;
+    background-color: white;
+}
+
+.input-text input{
+    font-size: 18px;
+}
+
+.input-text ::placeholder{
+    font-size: 15px;
+}
+
+.form-container button{
+    margin: 1rem;
+    padding: .6rem 2rem;
+    border: 2px solid white;
+    border-radius: 5rem;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+}
+.form-container button:hover{
+    background-color: rgb(107, 107, 107);
+}
+.form-container p{
+    padding: 5px;
+}
+.form-container a{
+    color: rgb(26, 58, 133);
+    text-decoration: underline;
+}
+
+/* home section*/
+.home{
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.home .content{
+    text-align: center;
+}
+
+.home .content h3{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-shadow: 3px 3px rgb(33, 32, 32);
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 0;
+    text-shadow: 2px 2px rgb(33, 32, 32);
+}
+
+
+.home .video-container video{
+    margin-top: 5rem;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.heading{
+    font-family: Jost;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    color: rgb(16, 111, 143);
+    border-radius: .5rem;
+}
+
+.book .row{
+    display: flex;
+    flex-wrap:inherit;
+    align-items: center;
+    padding-bottom: 0%;
+}
+
+.book .row .image img{
+    width: 80%;
+}
+
+.book .row form{
+    width: 100%;
+    height: 70%;
+    padding: 2rem;
+    box-shadow: .1rem .1rem .1rem .1rem rgb(175, 172, 172);
+    border-radius: 1rem;
+}
+
+.book .row form .inputBox{
+    padding: .5rem 0;
+}
+
+.book .row form .inputBox h4{
+    padding-bottom: 1rem;
+}
+
+.book .row form .inputBox input{
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem;
+    border: .1rem solid grey;
+    font-size: 1rem;
+    color: rgb(56, 54, 54);
+    text-transform: none;
+}
+
+.packages .h2{
+    text-align: center;
+    color: goldenrod;
+    text-transform: uppercase;
+}
+
+.packages .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.packages .box-container .box{
+    flex: 1 1 30rem;
+    align-items: center;
+    padding: .2rem 2rem;
+    border-radius: .5rem;
+}
+
+.packages .box-container .box img{
+    width: 90%;
+    height: 60%;
+    border-radius: .5rem;
+}
+
+.packages .box-container .box p{
+    width: 90%;
+}
+
+.packages .box-container .box .content{
+    padding: 1rem;
+}
+
+
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services .box-container .box{
+    flex: 1 1 20rem;
+    align-items: center;
+    padding: .2rem 2rem;
+    border-radius: .5rem;
+}
+
+.services .box-container .box img{
+    width: 100%;
+    height: 60%;
+    border-radius: .5rem;
+}
+
+.services .box-container .box p{
+    width: 100%;
+}
+
+.services .box-container .box .content{
+    padding: 1rem .5rem;
+}
+
+.gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
+}
+
+.gallery .box-container .box{
+    overflow: hidden;
+    box-shadow: 0 1rem 1.5rem rgb(94, 92, 92);
+    border: .4rem solid white;
+    border-radius:.5rem;
+    flex: 1 1 20rem;
+    width: 400px;
+    height: 250px;
+    margin: 0%;
+    position: relative;
+}
+
+.gallery .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .box img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.gallery .box-container .box .content{
+    position: absolute;
+    top: -100%; left: 0;
+    margin: .5rem;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7) ;
+    padding-top: 5.5rem;
+    font-size: 1rem;
+    color: rgb(230, 226, 226);
+}
+
+.gallery .box-container .box:hover .content{
+    top: 0;
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.contact .row .image{
+    flex: 1 1 30rem;
+}
+
+.contact .row form{
+    width: 50%;
+    flex: 1 1 50rem;
+    padding: 1.5rem;
+    box-shadow: .1rem .1rem .1rem .1rem rgb(208, 206, 206);
+    border-radius: .5rem;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .row form .inputBox input, form textarea{
+    width: 100%;
+    margin: .5rem 0;
+    padding: .8rem;
+    font-size: 1rem;
+    color: rgb(41, 40, 40);
+    background: rgb(243, 235, 226);
+    text-transform: none;
+}
+
+.contact .row form textarea{
+    width: 100%;
+    height: 7rem;
+    resize: none;
+}
+
+.footer{
+    background: rgb(67, 66, 66);
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.footer .box-container .box{
+    padding: .5rem 0;
+    flex: 1 1 10rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 18px;
+    padding: .5rem 0;
+    color: goldenrod
+}
+
+.footer .box-container .box p{
+    padding: .5rem 0;
+    color: white;
+}
+
+.footer .box-container .box a{
+    display: block;
+    
+    padding: .5rem 0;
+    color: white;
+}
+
+.footer .box-container .box a:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+
+/* media queries */
+
+@media(max-width:1200px){
+    html{
+        font-size: 80%;
+    }
+}
+
+@media(max-width:900px){
+    .navbar{
+        padding:1.5rem;
+    }
+    section{
+        padding:1.5rem;
+    }
+    .signup-form,
+    .login-form{
+        margin: 8rem;
+        width: 500px;
+        height: 400px;
+    }
+    form .input-text{
+        height: 40px;
+        margin: 1rem 4rem;
+    }
+}
+
+@media(max-width:750px){
+    .navbar .nav-list{
+        position: absolute;
+        top: 100%; right: 0; left: 0;
+        background: rgb(138, 136, 136);
+        border-top: .1rem solid rgb(74, 73, 73);
+        padding: 1rem 2rem;
+    }
+    .signup-form,
+    .login-form{
+        margin: 8rem;
+        width: 500px;
+        height: 400px;
+    }
+    form .input-text{
+        height: 40px;
+        margin: 1rem 4rem;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading span{
+        font-size: 2.5rem;
+    }
+    .contact .row form .inputBox input{
+        width: 100%;
+    }
+}
